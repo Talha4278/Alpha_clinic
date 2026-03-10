@@ -24,6 +24,44 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Animate stats from 0 to target
+function animateStats() {
+  const statNums = document.querySelectorAll('.stat-num[data-target]');
+  let hasAnimated = false;
+
+  function runAnimation() {
+    statNums.forEach(el => {
+      const target = parseInt(el.dataset.target, 10);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1500;
+
+      const startTime = performance.now();
+      function update(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        current = Math.floor(target * progress);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+        else el.textContent = target + suffix;
+      }
+      requestAnimationFrame(update);
+    });
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasAnimated) {
+        hasAnimated = true;
+        runAnimation();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  statNums.forEach(el => observer.observe(el));
+}
+
+animateStats();
+
 // Appointment form submission
 document.querySelector('.appointment-form')?.addEventListener('submit', (e) => {
   e.preventDefault();
