@@ -1071,9 +1071,11 @@ h1, h2, h3 {
 }
 
 .footer-logo {
-  font-size: 2rem;
-  color: var(--white);
-  margin-bottom: 0.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .footer-brand strong {
