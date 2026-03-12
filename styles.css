@@ -95,7 +95,7 @@ h1, h2, h3 {
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1000 px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
@@ -116,7 +116,10 @@ h1, h2, h3 {
 }
 
 .logo-icon {
-  font-size: 1.25rem;
+  height: 4rem;
+  width: 4rem;
+  object-fit: contain;
+  display: block;
 }
 
 .nav-links {
@@ -130,7 +133,7 @@ h1, h2, h3 {
   text-decoration: none;
   color: var(--gray);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
   transition: var(--transition);
@@ -163,8 +166,8 @@ h1, h2, h3 {
 }
 
 .btn-nav {
-  padding: 0.5rem 1rem;
-  font-size: 0.85rem;
+  padding: 0.15rem 0.25rem;
+  font-size: 0.35rem;
 }
 
 .nav .btn-nav {
@@ -715,29 +718,7 @@ h1, h2, h3 {
   color: var(--gray-light);
 }
 
-/* Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
 
-.gallery-item {
-  aspect-ratio: 4/3;
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.gallery-placeholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, var(--blue-pale), var(--blue-bg));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--blue-mid);
-  font-weight: 600;
-}
 
 /* Why Choose Us */
 .why-grid {
@@ -808,40 +789,7 @@ h1, h2, h3 {
 }
 
 /* Video */
-.video-section {
-  background: var(--blue-dark);
-}
 
-.video-section .section-title {
-  color: var(--white);
-}
-
-.video-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.video-placeholder {
-  aspect-ratio: 16/9;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  gap: 0.5rem;
-}
-
-.play-icon {
-  font-size: 4rem;
-  opacity: 0.8;
-}
-
-.video-note {
-  font-size: 0.85rem;
-  opacity: 0.7;
-}
 
 /* FAQs */
 .faq-list {
