@@ -348,10 +348,12 @@ h1, h2, h3 {
   height: 100%;
 }
 
-.hero-feature-card h4 {
+.hero-feature-card h2 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: var(--white);
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  font-weight: 700;
 }
 
 .hero-feature-card p {
