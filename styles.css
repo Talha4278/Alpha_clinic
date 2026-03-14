@@ -199,16 +199,16 @@ h1, h2, h3 {
 }
 
 .nav.scrolled .btn-nav {
-  background: rgba(26, 95, 122, 0.5);
-  color: var(--blue-dark);
+  background: var(--blue-mid);
+  color: var(--white);
   backdrop-filter: none;
-  border: 2px solid rgba(13, 59, 102, 0.6);
+  border: 2px solid var(--blue-mid);
   font-weight: 600;
 }
 
 .nav.scrolled .btn-nav:hover {
-  background: rgba(26, 95, 122, 0.6);
-  border-color: rgba(13, 59, 102, 0.8);
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
   transform: translateY(-2px);
 }
 
@@ -224,14 +224,14 @@ h1, h2, h3 {
 }
 
 .nav.scrolled .btn-primary.btn-nav {
-  background: rgba(37, 211, 102, 0.2);
-  border: 1px solid rgba(37, 211, 102, 0.5);
-  color: var(--whatsapp);
+  background: var(--whatsapp);
+  border: 1px solid var(--whatsapp);
+  color: var(--white);
 }
 
 .nav.scrolled .btn-primary.btn-nav:hover {
-  background: rgba(37, 211, 102, 0.3);
-  border-color: rgba(37, 211, 102, 0.7);
+  background: #1da851;
+  border-color: #1da851;
 }
 
 /* Hero */
