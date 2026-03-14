@@ -8,7 +8,7 @@
   --white: #ffffff;
   --off-white: #f8fcff;
   --gray: #4a5568;
-  --gray-light: #a0aec0;
+  --gray-light: #5a6b7d;
   --whatsapp: #25d366;
   --shadow: 0 4px 20px rgba(13, 59, 102, 0.08);
   --radius: 12px;
@@ -1131,7 +1131,7 @@ h1, h2, h3 {
   margin-top: 0.5rem;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   color: var(--white);
   font-size: 1rem;
   margin-bottom: 1rem;

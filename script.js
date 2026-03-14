@@ -15,6 +15,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Nav background on scroll (transparent at top to show hero image)
+let scrollTimeout;
 function updateNavScroll() {
   const nav = document.querySelector('.nav');
   if (window.scrollY > 50) {
@@ -23,7 +24,10 @@ function updateNavScroll() {
     nav?.classList.remove('scrolled');
   }
 }
-window.addEventListener('scroll', updateNavScroll);
+window.addEventListener('scroll', () => {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(updateNavScroll, 10);
+}, { passive: true });
 updateNavScroll(); // Initial state
 
 // Contact form submission
