@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alphadental.io/sitemap.xml
